@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -15,6 +16,7 @@ import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -62,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     private TextWatcher loginTextWatcher = new TextWatcher() {
@@ -89,4 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     };
+
+
 }
